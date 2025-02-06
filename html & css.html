@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Geo-tagging</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <img src="logo.png" alt="Logo" class="logo-img" />
+
+        <label class="logo">Geo-tagging of Soil Investigation Data</label><br>
+
+        <label class="location">Kerala Highway Research Institute</label>
+
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('tests')">Tests</a></li>
+            <li><a href="#" onclick="showTab('abbreviations')">Abbreviations</a></li>
+            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="home-content">
+
+        <div class="content-left">
+            <h2>Geospatial Data Portal to Store, Visualize, and Share the Laboratory Test Results</h2>
+    
+           <p>The Kerala Highway Research Institute (KHRI), working under the Kerala Public Works Department (PWD), has long been at the forefront of pioneering research and innovation within Kerala's infrastructure sector. The first step in infrastructure planning is to understand the soil conditions of the area. Using existing soil data from a nearby project can significantly save time and costs by eliminating the need for a new investigation. Since soil properties in neighboring areas are likely to be similar, this data provides a reliable baseline for understanding the general conditions, allowing the planning phase to begin faster. Additionally, knowing that the soil conditions are comparable helps standardize construction practices, reducing variability in methods and simplifying overall project management.</p>
+
+            <p>To address this, the Kerala Highway Research Institute (KHRI), under PWD, proposes creating a Geodatabase to store authenticated soil data using Google Earth and open-source software QGIS. This system will streamline the collection, organization, and visualization of soil data from borehole samples, laboratory tests, and borelog images. By linking geotagged data to specific geographic locations, this Geodatabase will reduce redundancy and provide stakeholders with easy access to reliable, spatially-referenced soil data. This approach will enhance decision-making for road, building, and bridge projects, ensuring more efficient and effective management of soil investigation data.</p>
+        
+            <a href="https://arunrnath.github.io/BORE-LOG/" target="_blank">
+                <button>SoilMap</button>
+            </a>
+            
+        
+        </div>
+    
+        <div class="content-right">
+            <iframe onclick="window.open('https://arunrnath.github.io/BORE-LOG/', '_blank')" src="https://arunrnath.github.io/BORE-LOG/"></iframe>
+        </div>
+
+    </section>
+
+    <section id="tests-content" style="display: none;">
+
+        <h2>Laboratory Test</h2>
+
+        <p>The samples collected under the supervision of the Kerala Highway Research Institute (KHRI) are tested in the KHRI’s laboratory to assess their index and engineering properties, and the soil are classified based on their properties as per IS 1498/ASTM D 2487. The index property of soil gives the information to identify and classify the soil, based on their physical characteristics, whereas, the engineering properties of soil determines the behaviour of soil under specific loading and environmental conditions. Assessmnet of the engineering property includes the determination of shear strength parameters, permeability characteristics, consolidation properties, dynamic behaviour, etc. The laboratory test procedure as per the Indian Standard conducted on the soil are as follows;</p>
+       
+        <div class="container table-container">
+            <!-- <h2 class="text-center">Laboratory Tests</h2> -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Laboratory Tests</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Preparation of dry soil samples for various tests</td>
+                        <td>IS 2720 Part 1 : 1983</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Preparation of dry soil samples:</strong>It involves air-drying, oven-drying, or using a desiccator to remove moisture, typically for laboratory testing, soil classification, and moisture content determination.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Determination of water content</td>
+                        <td>IS 2720 Part 2 : 1973</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Water content:</strong>The determination of water content in soil involves measuring the mass loss of a soil sample after drying it in an oven at a temperature of 105°C ± 5°C to a constant mass.</p>
+                        </td>
+                    </tr>
+<tr>
+                        <td>3</td>
+                        <td>Determination of Specific Gravity</td>
+                        <td>IS 2720 Part 3 : 1980</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Specific Gravity:</strong>It is the ratio of the density of the soil solids to the density of water at a given temperature. According to IS 2720, specific gravity is determined using the pycnometer method or the density bottle method.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>4</td>
+                        <td>Grain size analysis</td>
+                        <td>IS 2720 Part 4 : 1985</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Grain Size analysis:</strong>It refers to the proportion of different grain sizes present in a soil sample.According to Indian Standard 2720, grain size distribution can be determined using - Sieve Analysis: For coarse-grained soils and Hydrometer Analysis: For fine-grained soils</p>
+                        </td>
+</tr>
+<tr>
+                        <td>5</td>
+                        <td>Determination of Liquid and Plastic limits</td>
+                        <td>IS 2720 Part 5 : 1985</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Liquid Limit & Plastic Limit:</strong>The liquid limit is the moisture content at which the soil behaves like a liquid and flows when tilted, whereas plastic limit is the moisture content at which the soil behaves like a plastic and can be molded into a ball.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>6</td>
+                        <td>Determination of Shrinkage Factors</td>
+                        <td>IS 2720 Part 6 : 1972</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Shrinkage Factor:</strong>It is the ratio of the volume of the soil in its natural state to the volume of the soil when it is completely dry. It is used to calculate the shrinkage limit, which is an important parameter in determining the soil's behavior and classification.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>7</td>
+                        <td>Determination of water content-dry density relation using light compaction</td>
+                        <td>IS 2720 Part 7 : 1980</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Light Compaction:</strong>The objective of the light compaction test is to determine the maximum dry density and the optimum moisture content of the soil.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>8</td>
+                        <td>Determination of water content-dry density relation using heavy compaction</td>
+                        <td>IS 2720 Part 8 : 1983</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Heavy Compaction:</strong>The objective of the heavy compaction test is to determine the maximum dry density and the optimum moisture content of the soil.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>9</td>
+                        <td>Determination of Unconfined Compressive Strength (UCS)</td>
+                        <td>IS 2720 Part 10 : 1991</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>UCS:</strong>Unconfined Compressive Strength (UCS) is the load per unit area required to cause a soil sample to fail in compression without lateral confinement.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>10</td>
+                        <td>Determination of the Shear Strength Parameters of a Specimen Tested in Unconsolidated Undrained Triaxial Compression Without the Measurement of Pore Water Pressure</td>
+                        <td>IS 2720 Part 11 : 1993</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Unconsolidated Undrained Triaxial Compression:</strong> The test determines the undrained shear strength of saturated soils without confining pressure.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>11</td>
+                        <td>Direct shear test</td>
+                        <td>IS 2720 Part 13 : 1986</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Direct Shear:</strong>The Direct Shear Test is a laboratory test used to determine the shear strength of a soil sample.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>12</td>
+                        <td>Determination of density index (relative density) of cohesionless soils</td>
+                        <td>IS 2720 Part 14 : 1983</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Relative Density:</strong>It is the ratio of the difference between the in-situ density and the minimum density to the difference between the maximum density and the minimum density, expressed as a percentage.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>13</td>
+                        <td>Determination of Consolidation Properties</td>
+                        <td>IS 2720 Part 15 : 1986</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Consolidation:</strong>Consolidation is the process by which a soil's volume decreases due to the expulsion of water from the soil's pores under an applied load, crucial for settlement predictions, soil stability, and design of foundations.</p>
+                        </td>
+</tr>
+<tr>
+                        <td>14</td>
+                        <td>Laboratory determination of CBR</td>
+                        <td>IS 2720 Part 16 : 1987</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>California Bearing Ratio:</strong>CBR is a measure of the bearing capacity of a soil or aggregate material, used in pavement design, determining bearing capacity, and material classification.</p>
+                        </td>
+</tr>
+
+<tr>
+                        <td>15</td>
+                        <td>Laboratory determination of Permeability</td>
+                        <td>IS 2720 Part 17 : 1986</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Permeability</strong>Permeability is the measure of a soil's ability to allow water to flow through its pores, crucial for drainage, filtration, settlement, and stability analysis.</p>
+                        </td>
+</tr>
+
+<tr>
+                        <td>16</td>
+                        <td>Determination of Free Swell Index of Soils</td>
+                        <td>IS 2720 Part 40 : 1977</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Free Swell Index:</strong>Free Swell Index (FSI) is the ratio of the volume of a compacted soil sample after soaking in water to its initial dry volume.</p>
+                        </td>
+</tr>
+
+<tr>
+                        <td>17</td>
+                        <td>Measurement of Swelling Pressure of Soils</td>
+                        <td>IS 2720 Part 41 : 1977</td>
+<!-- Popup content -->
+                        <td class="popup">
+                            <p><strong>Swelling Pressure:</strong>It is the pressure exerted by a soil when it expands due to water absorption, crucial for foundation design, soil stability, pavement design, and geotechnical engineering projects.</p>
+                        </td>
+</tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section id="abbreviations-content" style="display: none;">
+
+        
+        <div class="container table-container">
+            <h2 class="text-center"><b>List of Abbreviations</b></h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Abbreviations</th>
+                        <th>Definitions</th>
+                        <th>Units</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GSA</td>
+                        <td>Grain Size Analysis</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>C. Sand</td>
+                        <td>Coarse Sand</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>M. Sand</td>
+                        <td>Medium Sand</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>F. Sand</td>
+                        <td>Fine Sand</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>w</td>
+                        <td>Water Content</td>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td>ωL</td>
+                        <td>Liquid Limit</td>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td>ωP</td>
+                        <td>Plastic Limit</td>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td>PI</td>
+                        <td>Plasticity Index</td>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td>γb</td>
+                        <td>Bulk Density</td>
+                        <td>kN/m3</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>Specific Gravity</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>σˈP</td>
+                        <td>Pre-consolidation Pressure</td>
+                        <td>kPa</td>
+                    </tr>
+                    <tr>
+                        <td>Cv,90%</td>
+                        <td>Coefficient of Consolidation at 90% consolidation</td>
+                        <td>cm2/min</td>
+                    </tr>
+                    <tr>
+                        <td>Cv,50%</td>
+                        <td>Coefficient of Consolidation at 50% consolidation</td>
+                        <td>cm2/min</td>
+                    </tr>
+                    <tr>
+                        <td>Cc</td>
+                        <td>Compression Index</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>UCS</td>
+                        <td>Unconfined Compressive Strength</td>
+                        <td>kPa</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>Cohesion</td>
+                        <td>kPa</td>
+                    </tr>
+                    <tr>
+                        <td>φ</td>
+                        <td>Angle of Internal Friction</td>
+                        <td>Degrees</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </section>
+    
+
+    <section id="contact-content" style="display: none;">
+
+        <p><b>Our Address</b></p>
+        <p>Kerala Highway Research Institute Karyavattom, Thiruvananthapuram, Kerala - 695 581</p>
+        <p>
+            <i class="fas fa-envelope"></i>
+            </a>deputydirectorsmfd@gmail.com |
+            <i class="fas fa-phone"></i></a> 0471 241 8689
+        </p>
+        <p><i class="fas fa-external-link-alt"></i> https://khri.kerala.gov.in</p>
+
+    </section>
+
+
+
+
+
+    <script>
+
+        function showTab(tabName) {
+            var contentSections = document.querySelectorAll('section');
+            contentSections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            var activeTab = document.getElementById(tabName + '-content');
+            if (activeTab) {
+                activeTab.style.display = 'block';
+            }
+            // Collapse the hamburger menu
+            var checkBox = document.getElementById('check'); // Assuming the checkbox has an ID of 'check'
+            if (checkBox) {
+                checkBox.checked = false;
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
